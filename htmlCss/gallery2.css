@@ -1,0 +1,16 @@
+.thumbnail>img {
+	height: 250px;
+	width: 333px;
+}
+
+body{
+	padding-top: 70px;
+}
+
+.jumbotron{
+	color: #233E56;
+}
+
+.navbar-inverse .navbar-collapse{
+	border-color: #233E56;
+}

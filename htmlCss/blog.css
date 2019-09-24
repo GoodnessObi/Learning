@@ -1,0 +1,33 @@
+body{
+	border: 20px solid #bdc3c7;
+	margin: 20px 20%;
+}
+
+div{
+	padding: 0 4%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.par{
+	border-left: 5px solid #bdc3c7;
+	padding-left: 1%;
+}
+
+.date{
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h2{
+	font-size: 40px;
+}
+
+p{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.post{
+	margin-bottom: 20px;
+}
