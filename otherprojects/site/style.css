@@ -1,0 +1,46 @@
+body {
+    color: rgb(34,34,34);
+    display: block;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: blue;
+    color: #fff;
+    padding: 0px 12px;
+}
+
+#main {
+    text-align: center;
+    padding-top: 109px;
+}
+
+input {
+   
+}
