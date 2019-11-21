@@ -1,8 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#body {
+    text-align: center;
+}
+
 body {
     color: rgb(34,34,34);
     display: block;
     font-family: arial, sans-serif;
-    text-align: center;
     font-size: 13px;
 }
 
@@ -30,17 +46,62 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.btn {
+nav li .btn {
     background-color: blue;
     color: #fff;
     padding: 0px 12px;
 }
 
-#main {
+#body {
     text-align: center;
     padding-top: 109px;
 }
 
 input {
    
+}
+
+#main{
+    padding-bottom: 20px
+}
+
+footer{
+    background-color:;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    margin-top:-100px;
+    clear: both;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+footer ul li a{
+    float: left;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .right {
+    float: right;
+}
+
+#country {
+    float: left;
+    margin: 5px solid black;
+    padding-bottom: 2px;
+    width: 100%
 }
