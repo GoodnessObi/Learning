@@ -20,9 +20,12 @@ body {
 	background-color: #FFA326;
 }
 p, [for="abtype"] {
-	margin-bottom: 0;
 	margin-top: 2rem;
+	margin-bottom: 0;
 }
+/* p {
+	margin-bottom: 1.5rem;
+} */
 section {
 	flex-basis: 57%;
 	margin-right: 10%;
@@ -38,12 +41,14 @@ fieldset {
 legend {
 	font-weight: bold;
 	font-size: 1.3rem;
-	padding-top: 1.5rem;
+	margin-top: 1.5rem;
 	margin-bottom: 1rem;
 	display: block;
+	border: 1px solid blue;
 }
 label {
 	display: block;
+	padding-bottom: 0.3rem;
 }
 textarea {
 	height: 10rem;
@@ -65,7 +70,7 @@ button:hover {
 	background-color: white;
 	color: #EE7E72;
 }
-input:not([type="radio"]):not([type="checkbox"]), textarea {
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
 	display: block;
 	margin-bottom: 2rem;
 	width: 20rem;
