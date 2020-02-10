@@ -7,43 +7,51 @@ html {
 body {
   padding: 0;
   margin: 0;
-  text-align: center;
-  font-size: 3rem;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper {
     width: 400px;
-    margin: 0 auto;
+    background-color: #000000;
+    color: #ffffff;
 }
-section {
-    margin: 0;
-    padding: 0;
-    border: 1px solid blue;
+.calc-button-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
 }
-.calc-buttons td {
-    width: 100px;
-    height: 100px;
+.screen {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 40px;
 }
-tr {
-    border-top: #000000;
-}
-td {
+.calc-button {
     color: #000000;
-    background-color: #d8d9db;    
+    background-color: #d8d9db;
+    border: none;
+    font-size: 40px;
+    height: 100px;
+    flex-basis: 24.5%;
 }
-td:hover {
+.calc-button:hover {
     background-color: #ebebeb ;
 }
-td:active {
+.calc-button:active {
     background-color: #bbbcbe;
 }
- table .function {
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+.calc-button:last-child {
     color: #ffffff;
     background-color: #df974c;
 }
-table .function:hover {
+.calc-button:last-child:hover {
     background-color: #dfb07e;
 }
-table .function:active {
+.calc-button:last-child:active {
     background-color: #dd8d37;
 }
