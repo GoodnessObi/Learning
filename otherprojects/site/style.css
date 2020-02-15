@@ -31,9 +31,7 @@ nav a:hover:not([class= "btn"]) {
     text-decoration: underline;
 }
 nav .btn {
-    /* border: 1px solid greenyellow; */
     color: #ffffff;
-    /* background-color: blue; */
     display: block;
     font-weight: bold;
 }
@@ -42,19 +40,78 @@ nav .btn {
 }
 .main{
     text-align: center;
-    border: 1px solid red;
-    padding: 89px 0 150px 0;
+    /* border: 1px solid red; */
+    padding-top: 10rem;
     margin-bottom: 3rem;
 }
+.main .search{
+    color: rgb(163, 154, 154);
+}
+.main .mic {
+    color: #4285F4;
+}
 .main img {
-    border: 1px solid blue;
+    height: 100px;
+    width: 20%;
+    margin-bottom: 2.5rem;
 }
 .main .searchbox {
-    border: 1px solid black;
-    width: 30%;
+    border: 1.25px solid #ECECEC;
+    width: 35%;
+    height: 45px;
     margin: 0 auto;
+    border-radius: 50px;
+}
+.main .searchbox input {
+    width: 90%;
+    height: 35px;
+    margin: 5px 0;
+    font-size: 13px;
+    border: none;
+}
+.main button {
+    margin: 2rem 0.5rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    border: none;
+    background-color: #F2F2F2;
+    color: rgb(61, 59, 59);
+}
+.main button:hover {
+    border: 0.5px solid rgb(163, 154, 154);
+}
+.main .language {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;  
+}
+.main .language p {
+    padding-top: 0;
+    margin: 0;
+    padding: 0;
+}
+.main .language ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main .language ul li {
+    display: inline;
+    margin: 0;
+    padding: 0 0.25rem;
+}
+.main .language li a {
+    text-decoration: none;
+}
+.main .language li a:hover {
+    text-decoration: underline;
 }
 footer {
+    position: fixed;
+    width: 100%;
     position: fixed;
     bottom: 0px; 
     width: 100%;
@@ -63,9 +120,9 @@ footer p {
     border-top: outset;
     padding: 0 0.8rem;
     margin: 0;
-    line-height: 28px;
+    line-height: 2.25rem;
     background-color: #F2F2F2;
-    color: rgb(61, 59, 59);
+    color: rgb(163, 154, 154);
 }
 footer .list {
     border-top: outset;
@@ -76,7 +133,6 @@ footer .list {
 }
 .rightfooter li, .leftfooter li {
     display: inline-block;
-    /* border: 1px solid red; */
     padding: 0 0.8rem;
 }
 footer .list ul {
@@ -84,11 +140,11 @@ footer .list ul {
     padding: 0;
     list-style-type: none;
     font-size: 13px;
-    line-height: 28px;
+    line-height: 2.25rem;
 }
 footer a {
     text-decoration: none;
-    color: rgb(61, 59, 59);
+    color: rgb(163, 154, 154);
 }
 footer a:hover {
     text-decoration: underline;
