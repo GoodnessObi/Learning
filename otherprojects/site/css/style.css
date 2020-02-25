@@ -52,22 +52,22 @@ nav .btn {
 }
 .main img {
     height: 100px;
-    width: 20%;
+    width: 280px;
     margin-bottom: 2.5rem;
 }
 .main .searchbox {
     border: 1.25px solid #ECECEC;
-    width: 35%;
-    height: 45px;
+    width: 600px;
+    height: 50px;
     margin: 0 auto;
     border-radius: 50px;
 }
 .main .searchbox input {
-    width: 90%;
+    width: 500px;
     height: 35px;
     margin: 5px 0;
     font-size: 13px;
-    border: none;
+    border: transparent;
 }
 .main button {
     margin: 2rem 0.5rem;
