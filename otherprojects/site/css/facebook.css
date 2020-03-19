@@ -1,32 +1,80 @@
-* {
+html {
     box-sizing: border-box;
-}
-body {
-    margin: 0;
-    padding: 0;
-}
-nav {
-    width: 100%;
-    height: 80px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+  }
+  nav {
+      /* border: 3px solid red; */
+      background-color: #4867AA;
+  }
+  #navbar {
+    width: 60%;
+    margin: 0 auto;
     display: flex;
-    border: 1px solid red;
-    justify-content: space-around;
-    background-color: #4867AA;
-    color: #FDFFFC;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 4.9rem;
+  }
+  #navbar img {
+      height: 4.75rem;
+      flex-basis: 60%;
+      /* border: 3px solid red; */
+  }
+ 
+  #navbar form{
+      display: flex;
+      align-items: center;
+      /* border: 1px solid black; */
+      flex-basis: 40%;
+      justify-content: space-around;
+      font-size: 12px;
+      color: #F8FEFE;
+  }
+  #navbar form label {
+      display: block;
+      /* border: 1px solid red; */
+  }
+  #navbar form input {
+      /* border: 2px solid yellow; */
+      margin: 6px 0;
+      background-color: #FFFDFD;
+  }
+  #navbar #email {
+      /* border: 1px solid black; */
+      margin-top: 0;
+      margin-bottom: 8px;
+  }
+  #navbar #email input {
+    /* border: 2px solid yellow; */
+    /* margin-top: 2px; */
+    background-color: #FFFDFD;
+  }
+  #navbar #email label {
+      margin-bottom: 5px;
+  }
+  #navbar #password p {
+      /* border: 1px solid red; */
+      margin: 0;
+      font-size: 12px;  
+  }
+#navbar #password a {
+    color: #90ACCE;
+    text-decoration: none;
 }
-nav img {
-    height: 75px;
-    width: 200px;
+#navbar form input {
+    width: 9rem;
 }
-nav button {
-    color: #FDFFFC;
-    background-color: #4867AA;
-}
-nav form {
-    display: block;
-}
-.main {
-    background-color: #FBFCFD;
-    display: flex;
-    justify-content: space-around;
+#navbar form button {
+    width: 3rem;
+    font-size: 12px;
+    padding: 2px 1.5px;
+    color: #F8FEFE;
+    background-color: #0E52B0;
+    border: 1px solid black;
 }
