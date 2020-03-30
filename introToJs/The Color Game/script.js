@@ -34,9 +34,9 @@ hardBtn.addEventListener("click", function(){
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
     for(let i = 0; i < squares.length; i++) {
-            squares[i].style.backgroundColor = colors[i];
-            squares[i].style.display = "block";
-        }
+        squares[i].style.backgroundColor = colors[i];
+        squares[i].style.display = "block";
+    }
 })
 
 resetButton.addEventListener("click", function(){
@@ -46,14 +46,16 @@ resetButton.addEventListener("click", function(){
     pickedColor = pickColor();
     //change colorDisplay to match picked color
     colorDisplay.textContent = pickedColor;
+    messageDisplay.textContent = "";
     //change colors of square
     for(let i = 0; i < squares.length; i++) {
         squares[i].style.backgroundColor = colors[i];
     }
+    this.textContent = "New Colors";
     h1.style.backgroundColor = "steelblue";
 })
 
-colorDisplay.textContent = pickedColor;
+colorDisplay.textContent = pickedColor; 
 
 
 for(let i = 0; i < squares.length; i++) {
