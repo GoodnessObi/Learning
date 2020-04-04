@@ -1,3 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+    height: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: #0F1A4B;
+    color: #FFF;
+}
+
+nav h1 {
+    font-size: 40px;
+}
+nav select {
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+}
+
+#main {
+    margin: 10px auto;
+    width: 40%;
+    height: 600px;
+}
+
+#main img {
+    width: 100%;
+    min-height: 400px;
+    max-height: 600px;
+}
+
 @keyframes spin {
     to {
         transform: rotateZ(360deg);
@@ -9,6 +52,7 @@
     text-align: center;
     animation: 2s spin linear infinite;
     display: none;
+    margin-top: 250px;
 }
 
 .dog-img {
