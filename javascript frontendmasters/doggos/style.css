@@ -37,9 +37,9 @@ nav select {
 }
 
 #main img {
-    width: 100%;
-    min-height: 400px;
-    max-height: 600px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 @keyframes spin {
