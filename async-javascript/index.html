@@ -9,19 +9,19 @@
     <h1>Asynchronous javascript</h1>
 
     <script>
-        // const second = () => {
-        //     setTimeout(() => {
-        //         console.log(' async hey there');
-        //     }, 2000)
-        // }
+            // const second = () => {
+            //     setTimeout(() => {
+            //         console.log(' async hey there');
+            //     }, 2000)
+            // }
 
-        // const first = () => {
-        //     console.log('hey there');
-        //     second();
-        //     console.log('the end')
-        // }
+            // const first = () => {
+            //     console.log('hey there');
+            //     second();
+            //     console.log('the end')
+            // }
 
-        // first();
+            // first();
 
             // function getRecipe() {
             //     setTimeout(() => {
@@ -67,22 +67,34 @@
                 })
             }
 
-            getIDs
-            .then(IDs => {
-                console.log(IDs);
-                return getRecipe(IDs[2]);
-            })
-            .then(recipe => {
-                console.log(recipe);
-                return getRelated('Itunu');
-            })
-            .then(recipe => {
-                console.log(recipe);
-            })
-            .catch(error => {
-                console.log('error!!!')
-            });
+            // getIDs
+            // .then(IDs => {
+            //     console.log(IDs);
+            //     return getRecipe(IDs[2]);
+            // })
+            // .then(recipe => {
+            //     console.log(recipe);
+            //     return getRelated('Itunu');
+            // })
+            // .then(recipe => {
+            //     console.log(recipe);
+            // })
+            // .catch(error => {
+            //     console.log('error!!!')
+            // });
 
+            async function getRecipeAW() {
+                const IDs = await getIDs;
+                console.log(IDs);
+                const recipe = await getRecipe(IDs[2]);
+                console.log(recipe);
+                const related = await getRelated('Itunu');
+                console.log(related);
+
+                return recipe;
+            }
+
+            getRecipeAW().then(result => console.log(`${result} is the best ever!!`));
     </script>
 </body>
 </html>
