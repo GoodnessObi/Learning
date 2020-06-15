@@ -77,20 +77,23 @@ const dog = {
 
 dog.speak(); */
 
-const primeNumbers = [1, 2, 3, 4, 5, 7];
-console.log(primeNumbers.join(" | "));
-console.log (primeNumbers.length);
+// const primeNumbers = [1, 2, 3, 4, 5, 7];
+// console.log(primeNumbers.join(" | "));
+// console.log (primeNumbers.length);
 
-const cities = ["Seattle", "Lagos", "Suleja", "Abuja", "Jos"];
+// const cities = ["Seattle", "Lagos", "Suleja", "Abuja", "Jos"];
 
-//method 1
-for (let i = 0; i < cities.length; i++) {
-    console.log(cities[i].toUpperCase());
-}
+// //method 1
+// for (let i = 0; i < cities.length; i++) {
+//     console.log(cities[i].toUpperCase());
+// }
 
-console.log("------")
+// console.log("------")
 
-//method2 
-cities.forEach(function(city,i){
-    console.log(city,i);
-})
+// //method2 
+// cities.forEach(function(city,i){
+//     console.log(city,i);
+// })
+
+const redSquare = document.querySelector('.red-square');
+redSquare.style.backgroundColor = 'limegreen';
