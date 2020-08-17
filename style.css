@@ -20,6 +20,9 @@ li {
 }
 
 /* base styles */
+html {
+	overflow-x: hidden;
+}
 body {
 	background: var(--secondary);
 	overflow-x: hidden;
